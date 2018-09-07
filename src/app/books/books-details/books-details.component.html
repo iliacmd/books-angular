@@ -1,0 +1,17 @@
+<h2>
+  <a routerLink="/">Books</a>
+</h2>
+<div class="book-details" *ngIf="book">
+  <div class="book-details__title">
+    <h3>{{book.title}}</h3>
+  </div>
+  <div class="book-details__year" *ngIf="book.year">
+    {{book.year}}
+  </div>
+  <div class="book-details__authors" *ngIf="book.authors">
+    <div class="author__name" *ngFor="let author of book.authors">
+      {{author.fullName}}
+    </div>
+  </div>
+  <div class="book-details__year">{{book.year}}</div>
+</div>

@@ -1,0 +1,27 @@
+.book-item{
+
+  flex: 1 1 auto;
+  max-width: 220px;
+  min-height: 300px;
+  border: 1px solid;
+  padding: 4px;
+  margin: 0 6px 0 0;
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__authors {
+    display: flex;
+    margin: 6px 0 0 0;
+  }
+  &__author-name {
+    margin: 0 6px 0 0;
+    justify-content: left;
+  }
+}
+
+.books-list {
+  display: flex;
+}
+

@@ -1,0 +1,14 @@
+<section class="books">
+  <div class="books-list">
+    <div class="book-item" *ngFor="let book of books">
+      <div class="book-item__title">
+        <a routerLink="/books/details/{{book.id}}">{{book.title}}</a>
+      </div>
+      <div class="book-item__authors" *ngIf="book.authors">
+        <div class="book-item__author-name" *ngFor="let author of book.authors">
+          {{author.fullName}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
